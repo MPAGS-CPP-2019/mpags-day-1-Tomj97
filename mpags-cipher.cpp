@@ -18,21 +18,21 @@ int main()
   std::cout << "Enter the message: \n" << std::endl;
   std::string  msg;
   std::getline(std::cin,msg); //Put input from user into the msg variable.
-  int choice = 0;
+  std::string choice = "0";
 
 
  
   //If user does not choose 1 or 2 as their choice, ask them again until they enter a correct option.
-  while( choice != 1 && choice != 2)
+  while( choice != "1" && choice != "2")
     {
       std::cout << "What would you like to do? \n1 Encryption \n2 Decryption \n"; 
       std::cin >> choice;
       
-	 if( choice == 1)
+	 if( choice == "1")
 	   {
 	     fullEncryption(msg);
 	   }
-	 else if(choice == 2)
+	 else if(choice == "2")
 	   {
 	     decryption(msg);
 	   }
