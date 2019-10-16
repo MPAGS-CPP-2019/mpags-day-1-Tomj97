@@ -14,7 +14,7 @@ Also accepts input for user message to be encrypted.
 */
 int main(int argc, char* argv[])
 {
-  const int versionNum = 1.1; //Version number of the program.
+  const std::string versionNum {"1.1"}; //Version number of the program.
 
   //Format command line arguments for read out at start of program.
   const std::vector<std::string> cmdLineArgs{argv, argv+argc}; //Contains the command line arguments. These will be saved to the ouput file.
@@ -167,7 +167,7 @@ Arguments:
 std::string fullEncryption(std::string userMsg)
 {
 
-  char ch;
+  //char ch;
   std::string newString; //Contains the encrypted message.
 
   //Filling a vector with words to replace the integers in users string.
